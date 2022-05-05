@@ -130,7 +130,7 @@ header .nav{
 .section-1 .max-width .content-1{
 	font-size: 5vh;
 	font-family: Poppins;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 
@@ -138,7 +138,7 @@ header .nav{
 	font-size: 5.5vh;
 	font-family: Poppins;
 	color: #1E96F3;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 
@@ -344,7 +344,7 @@ header .nav{
 .content-3{
 	color: white;
 	font-size: 25px;
-	font-weight: 700;
+	font-weight: 500;
 	font-family: Poppins;
 }
 
@@ -451,8 +451,8 @@ header .nav{
 	
 	.section-5 .max-width .title{
 		color: white;
-		font-family: Poppins-g;
-	
+		font-family: Poppins;
+	font-weight: 500;
 	}
 
 	.section-5 .contact-section, .contact-section p, .contact-section .info .head, .subtitle{
