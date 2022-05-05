@@ -24,10 +24,7 @@
   
   }
 
-@font-face{
-	font-family: Montserrat;
-	src: url('../Fonts/Montserrat/Montserrat-Medium.ttf');
-}
+
 
 *{
   padding: 0;
@@ -128,14 +125,14 @@ header .nav{
 }
 
 .section-1 .max-width .content-1{
-	font-size: 5vh;
+	font-size: 35px;
 	font-family: Poppins;
 	font-weight: 500;
 }
 
 
 .section-1 .max-width .content-2{
-	font-size: 5.5vh;
+	font-size: 40px;
 	font-family: Poppins;
 	color: #1E96F3;
 	font-weight: 500;
@@ -190,6 +187,7 @@ header .nav{
 		font-size: 40px;
 		text-align: center;
 		font-family: Poppins;
+		font-weight: 550;
 		padding-top: 30px;
     margin-top: 20px;
 	
@@ -211,9 +209,9 @@ header .nav{
 		margin: auto 20px;
 		position: relative;
 		animation: photo;
-		animation-duration: 4s;
+		animation-duration: 5s;
 		animation-fill-mode: forward;
-		animation-delay: 2s;
+		animation-delay: 4s;
 		
 	}
 
@@ -248,9 +246,9 @@ header .nav{
    	 /* must position:relative */
    	 position: relative;
     animation-name: text;
-		animation-duration: 4s;
+		animation-duration: 5s;
 		animation-fill-mode: forward;
-		animation-delay: 2s;
+		animation-delay: 4s;
 	
 		}
 	@keyframes text{
@@ -290,8 +288,8 @@ header .nav{
 		display: inline-block;
 	background: white;
 	color: #1E96F3;
-	padding: 2px 15px;
-	font-size: 20px;
+	padding: 4px 15px;
+	font-size: 25px;
 	margin-top: 20px;
 	border-radius: 5px;
 
@@ -315,7 +313,7 @@ header .nav{
   	flex-direction: column;
 		justify-content: center;
 		align-items: center;	
-		
+    font-weight: 600;		
 		}
 	
 	.max-width .title .enter{
@@ -344,8 +342,8 @@ header .nav{
 .content-3{
 	color: white;
 	font-size: 25px;
-	font-weight: 500;
 	font-family: Poppins;
+	font-weight: 550;
 }
 
 .content .box{
@@ -446,13 +444,14 @@ header .nav{
 	.section-5 .max-width{
 			width: 100%;
 		height: 150vh;
-		margin: 0 10vh;
+		margin: 0 8vh;
 	}
 	
 	.section-5 .max-width .title{
 		color: white;
 		font-family: Poppins;
-	font-weight: 500;
+		font-weight: 500;
+	
 	}
 
 	.section-5 .contact-section, .contact-section p, .contact-section .info .head, .subtitle{
@@ -464,9 +463,11 @@ header .nav{
 
 .section-5 .contact-section .column-left{
 	font-size: 20px;
+	margin-top: 20px;
 }
+
 .section-5 .contact-section .column-left p{
-	width: calc(50% - 30px); 
+	width: calc(60% - 30px); 
 	font-size: 20px;
 
 }
@@ -475,7 +476,8 @@ header .nav{
 .section-5 .contact-section .content-3{
 	font-size: 25px;
 	margin-bottom: 20px;
-	font-family: Poppins-g;
+	font-family: Poppins;
+	font-weight: 400;
 }
 
 
@@ -492,7 +494,7 @@ header .nav{
 	}
 	
 	.section-5 .contact-section .column-left .icons .row .info{
-		margin-left: 30px;
+		margin-left: 20px;
 		
 	}
 	
@@ -504,7 +506,8 @@ header .nav{
 
 .section-5 .contact-section .column-left .icons .row .info .head{
 	font-size: 22px;
-	font-family: Poppins-g;    
+	font-family: Poppins;
+	font-weight: 500;    
 }
 
 
@@ -603,7 +606,7 @@ footer{
 	background: black;
 	color: white;
 	padding: 20px;
-	font-size: 18px;
+	font-size: 20px;
 	height: 100px;
 	text-align: center;
 }
@@ -619,7 +622,7 @@ footer span, span i{
 	line-height: 50px;
 }
 /*start of media query styling, this is for a max-width of 876 pixels*/
-@media (max-width: 876px){
+@media (max-width: 952px){
 
 	header{
 		padding: 0 30px;
@@ -627,8 +630,7 @@ footer span, span i{
 	}
 	
 	.Logo{
-				
-		
+			
 	}
 	
 	.checkbtn, .checkbtn i{
@@ -793,14 +795,14 @@ footer span, span i{
 		 background: linear-gradient(#1E96F3, #3B60CE);
 		 padding: 0;
 		width: 100%;
-		height: 230vh;
+		height: 220vh;
 		margin: 0;
 		flex-wrap: wrap;
 		
 	}
 	.section-5 .max-width{
 		width: 100%;
-		height: 230vh;
+		height: 220vh;
 	} 
 .section-5 .contact-section{
 		display: flex;
@@ -816,8 +818,14 @@ footer span, span i{
 
 @media (max-width: 600px){
 	
+		
+	.Logo{
+				width: 150px;
+	}
+	
 	.section-1 .max-width{
 		padding: 5px;
+		margin: 30% 20px;
 		
 	}
 	
@@ -828,7 +836,6 @@ footer span, span i{
 
 .section-1 .max-width .content-2{
 	font-size: 27px;
-	font-weight: bold;
 	color: #1E96F3;
 }
 
@@ -837,18 +844,202 @@ footer span, span i{
 	margin: 5px 0;
 }
 
-
-.nav .Logo{
-	font-size: 35px;
-	margin-left: 20px;
-}
-
+.section-2 .max-width .me{
+		width: 150px;
+		height: 150px;
+		border-radius: 50% 50% 50% 50%; 
+    margin-left: 0%;
+    
+		}
+		
+		
   .section-2 .column-right .max-width .text{
       	
-      	font-size: 24px;
+      	font-size: 20px;
       	
       }	
 	
+	.section-5{
+		background: linear-gradient(#1E96F3, #3B60CE);
+		width: 100%;
+		height: 230vh;
+		margin: 0;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		color: white;
+		
+	}
+	
+	.section-5 .max-width{
+			width: 100%;
+		height: 230vh;
+		margin: 0 2vh;
+	}
+	
+	.section-5 .max-width .title{
+		color: white;
+		
+	
+	}
+
+	.section-5 .contact-section, .contact-section p, .contact-section .info .head, .subtitle{
+		color: white;
+		font-size: 20px;
+	}
+	
+
+
+.section-5 .contact-section .column-left{
+	font-size: 20px;
+	margin-top: 20px;
+	
+}
+.section-5 .contact-section .column-left p{
+	width: calc(100% - 30px); 
+	font-size: 20px;
+
+}
+
+
+.section-5 .contact-section .content-3{
+	font-size: 23px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: Poppins;
+	font-weight: 600;
+}
+
+
+.section-5 .contact-section .column-left .icons{
+	margin: 10px 0;
+}
+
+
+.section-5 .contact-section .column-left .icons .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+	margin: 10px 0;
+	}
+	
+	.section-5 .contact-section .column-left .icons .row .info{
+		margin-left: 20px;
+		
+	}
+	
+	
+.contact-section .column-left .icons .row i{
+	font-size: 25px;
+	color: white;
+}
+
+.section-5 .contact-section .column-left .icons .row .info .head{
+	font-size: 20px;
+	font-family: Poppins, Arial;   
+	font-weight: 600; 
+}
+
+
+.section-5 .column-right{
+     display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+   	 margin-left: 5%;
+   	 margin-top: 10%;
+   	 	
+}	
+
+
+.section-5 .contact-section{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+.section-5 .column-right form .fields{
+	display: flex;
+
+}
+
+.column-right form .field,
+.column-right form .fields .field{
+	height: 45px;
+	width: 90%;
+	margin: 15px 0;
+}
+
+.column-right form .fields input, .field input, .column-right .field-textarea textarea{
+	width: 90%;
+	height: 100%;
+	border: 1px solid lightgrey;
+	border-radius: 6px;
+	outline: none;
+	padding: 0 15px;
+	font-size: 15px;
+	transition: all 0.3s ease;
+}
+
+.column-right .textarea{
+	height: 80px;
+	width: 90%;
+}
+
+.column-right .field-name, .field-email{
+	margin-right: 10px;
+}
+
+.column-right .field-email{
+	column-left: 10px;
+}
+
+.column-right textarea .textarea{
+	padding-top: 10px;
+	resize: none;
+}
+
+.column-right .field input:focus, .textarea textarea:focus{
+	border-color: #b3b3b3;
+}
+
+.column-right  .button-area{
+	display: flex;
+	align-items: center;
+}
+
+.button-area button{
+	color: #1E96F3;
+	display: block;
+	width: 150px;
+	height: 40px;
+	outline: none;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 6px;
+	cursor: pointer;
+	flex-wrap:nowrap;
+	background: white;
+	border: 2px solid white;
+	transition: all 0.3s ease;
+}
+
+.button-area button:hover{
+	color: white;
+	border: 2px solid white;
+	background: none;
+	
+}
+
+
+footer{
+	background: black;
+	color: white;
+	padding: 20px;
+	font-size: 18px;
+	height: 150px;
+	text-align: center;
+}
 	}
 	
 	
