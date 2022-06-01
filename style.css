@@ -20,7 +20,7 @@
   
   @font-face{
   font-family: Poppins-a;
-  src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
+  src: url('Poppins-SemiBold.ttf');
   
   }
 
@@ -103,7 +103,7 @@ header .nav{
 
 .section-1{
 	display: flex;
-	background-image: url('../images/landing-pic.jpg');
+	background-image: url('landing-pic.jpg');
 	height: 100vh;
 	background-size: cover;
 	background-position:center ;
