@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
 
 :root{
   --prcolor: #1E96F3;
@@ -66,7 +68,6 @@ header .nav{
 
  .Logo{
 	width: 250px;
-	height: 250px;
 	margin-left: -20px;
 	color: black;
 }
@@ -118,16 +119,14 @@ header .nav{
 
 .section-1 .max-width .content-1{
 	font-size: 35px;
-	font-family: Poppins;
-	font-weight: 500;
-}
+	font-family: Poppins-a, 'Poppins';
+	}
 
 
 .section-1 .max-width .content-2{
 	font-size: 40px;
-	font-family: Poppins;
+	font-family: Poppins-a, 'Poppins';
 	color: #1E96F3;
-	font-weight: 500;
 }
 
 
@@ -178,8 +177,7 @@ header .nav{
 		position: relative;
 		font-size: 40px;
 		text-align: center;
-		font-family: Poppins;
-		font-weight: 550;
+		font-family: Poppins-a, 'Poppins';
 		padding-top: 30px;
     margin-top: 20px;
 	
@@ -323,8 +321,8 @@ header .nav{
 .content-3{
 	color: white;
 	font-size: 25px;
-	font-family: Poppins;
-	font-weight: 550;
+	font-family: Poppins-a, 'Poppins';
+
 }
 
 .content .box{
@@ -356,7 +354,6 @@ header .nav{
 
 .image{
 	width: 150px;
-	height: 150px;
 	border-radius: 50%;
 	border: 2px solid black;
 }
@@ -364,7 +361,7 @@ header .nav{
 
 .box2 .content3{
 	font-size: 25px;
-	font-family: Poppins, Poppins-a;
+	font-family: Poppins-a, 'Poppins';
 	font-weight: 550;
 }
 
@@ -460,7 +457,6 @@ header .nav{
 
 .logo-section .Logo{
 	width: 500px;
-	height: 500px;
 	margin: 0;
   border: 3px solid #1E96F3; 	
 }
@@ -513,8 +509,7 @@ header .nav{
 	.section-5{
 		background: linear-gradient(#1E96F3, #3B60CE);
 		width: 100%;
-		height: 120vh;
-		margin: 0;
+	 margin: 0;
 		padding: 20px;
 		display: flex;
 		align-items: center;
@@ -524,15 +519,13 @@ header .nav{
 	
 	.section-5 .max-width{
 			width: 100%;
-		height: 120vh;
 		margin: 0 20px;
 	}
 	
 	.section-5 .max-width .title{
 		color: white;
-		font-family: Poppins;
-		font-weight: 500;
-	
+		font-family: Poppins-a, 'Poppins';
+		
 	}
 
 	.section-5 .contact-section, .contact-section p, .contact-section .info .head, .subtitle{
@@ -557,8 +550,8 @@ header .nav{
 .section-5 .contact-section .content-3{
 	font-size: 25px;
 	margin-bottom: 20px;
-	font-family: Poppins;
-	font-weight: 400;
+	font-family: Poppins-a, 'Poppins';
+
 }
 
 
@@ -587,9 +580,8 @@ header .nav{
 
 .section-5 .contact-section .column-left .icons .row .info .head{
 	font-size: 22px;
-	font-family: Poppins;
-	font-weight: 500;    
-}
+	font-family: Poppins-a, 'Poppins';
+	}
 
 
 .section-5 .column-right{
@@ -747,21 +739,30 @@ footer i{
 		justify-content: center;
 	}
 	
-	.Logo{
-	margin-left: -25px; 		
+.nav	.Logo{
+	width: 200px;
+  /*border: 2px solid black;*/
+  position: relative;
+  left: -180px;
+  top: -60px; 		
 	}
 	
+.nav{
+	display: flex;
+	flex-direction: column;
+	max-height: 50px;	
+}
+
 
 .nav #menu-list{
 display: flex;
 flex-direction: row;
 align-items: center;
 position: relative;
-left: -240px;
-top: 80px;
+top: -90px;
 padding: 0 10px 0 10px;
 width: 100%;
-line-height: 50px;
+line-height: 0;
 }
 
 
@@ -782,8 +783,8 @@ border-radius: 10px;
 
 .nav #menu-list li .menu-btn:hover{
 	background: none;
-	color: black;
-	border: 2px solid black;
+	color: white;
+	background: #1E96F3;
 }	
 
 
@@ -814,7 +815,7 @@ border-radius: 10px;
 }
 
 .active, .hi{
-	font-size: 23px;
+	font-size: 17px;
 }	
 	.section-2{
 		display: flex;
@@ -836,7 +837,7 @@ border-radius: 10px;
 		position: relative;
 		animation-name: text;
 		animation-duration: 10s;
-		animation-delay: 3s;
+		animation-delay: 5s;
 		}
 
 @keyframes text{
@@ -927,14 +928,12 @@ border-radius: 10px;
 		 background: linear-gradient(#1E96F3, #3B60CE);
 		 padding: 0;
 		width: 100%;
-		height: 160vh;
 		margin: 0;
 		flex-wrap: wrap;
 		
 	}
 	.section-5 .max-width{
 		width: 100%;
-		height: 160vh;
 		margin: 0;
 	} 
 .section-5 .contact-section{
@@ -957,7 +956,6 @@ border-radius: 10px;
 
 .logo-section .Logo{
 	width: 350px;
-	height: 300px;
 	margin: 0;
   border: 3px solid #1E96F3; 	
 }	
@@ -975,9 +973,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 position: relative;
-left: -225px;
-top: 80px;
-border: 2px solid black;
 padding: 0 10px 0 10px;
 line-height: 50px;
 
@@ -1024,7 +1019,6 @@ line-height: 50px;
 	.section-5{
 		background: linear-gradient(#1E96F3, #3B60CE);
 		width: 100%;
-		height: 120vh;
 		margin: 0;
 		padding: 20px;
 		display: flex;
@@ -1035,7 +1029,6 @@ line-height: 50px;
 	
 	.section-5 .max-width{
 			width: 100%;
-		height: 120vh;
 		margin: 0 20px;
 	}
 	
@@ -1098,7 +1091,7 @@ line-height: 50px;
 
 .section-5 .contact-section .column-left .icons .row .info .head{
 	font-size: 20px;
-	font-family: Poppins, Arial;   
+	font-family: Poppins-a, 'Poppins', Helvetica;   
 	font-weight: 600; 
 }
 
@@ -1197,3 +1190,5 @@ footer{
 	text-align: center;
 }
 	}
+	
+	
