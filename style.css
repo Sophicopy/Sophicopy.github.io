@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+:root{
+  --prcolor: #1E96F3;
+  --fontf: Poppins-a, Helvetica;
+  --fontw: Poppins-a;
+  --font: Poppins, Helvetica;
+}
 
 :root{
   --prcolor: #1E96F3;
-  --fontf: Poppins, Montserrat, Arial, sans-serif;
-  --fontw: Poppins-a;
+  --fontf: Poppins-a, Helvetica;
+ --font: Poppins, Helvetica;
+ --fontw: Poppins-a;
 }
 
 @font-face{
@@ -15,14 +21,15 @@
   }
   
   @font-face{
-  font-family: Poppins-a;
-  src: url('Poppins-SemiBold.ttf');
+  font-family: Poppins;
+  src: url('Poppins-Regular.ttf');
   
   }
   
-   @font-face{
+  
+  @font-face{
   font-family: Poppins-a;
-  src: url('Poppins-Regular.ttf');
+  src: url('Poppins-SemiBold.ttf');
   
   }
   
@@ -40,7 +47,7 @@
   text-decoration: none;
   list-style: none;
  color: black;
-  font-family:  Poppins;
+  font-family:  var(--font);
   box-sizing: border-box;
   font-display: ;
   
@@ -101,7 +108,7 @@ header .nav{
 	background: #1E96F3;
 	color: white;
 	border-radius: 10px;
-	padding: 5px 10px;
+	padding: 10px;
 
 }
 
@@ -115,6 +122,7 @@ header .nav{
 	display: flex;
 	background-image: url('../images/landing-pic.jpg');
 	height: 100vh;
+	width: 100%;
 	background-size: cover;
 	background-position:center ;
 	background-repeat: no-repeat;
@@ -126,15 +134,16 @@ header .nav{
 }
 
 .section-1 .max-width .content-1{
-	font-size: 35px;
-	font-family: Poppins-a, 'Poppins';
+	font-size: 30px;
+	font-family: var(--fontw);
 	}
 
 
 .section-1 .max-width .content-2{
-	font-size: 40px;
-	font-family: Poppins-a, 'Poppins';
+	font-size: 33px;
+	font-family: var(--fontw);
 	color: #1E96F3;
+	font-weight: 650;
 }
 
 
@@ -144,8 +153,8 @@ header .nav{
 	display: inline-block;
 	background: #1E96F3;
 	color: white;
-	padding: 2px 15px;
-	font-size: 25px;
+	padding: 10px 15px;
+	font-size: 20px;
 	margin-top: 20px;
 	border-radius: 5px;
 	transition: all 0.2s;
@@ -185,7 +194,7 @@ header .nav{
 		position: relative;
 		font-size: 40px;
 		text-align: center;
-		font-family: Poppins-a, 'Poppins';
+		font-family: var(--fontw);
 		padding-top: 30px;
     margin-top: 20px;
 	
@@ -212,6 +221,7 @@ header .nav{
 		animation-delay: 3s;
 		
 	}
+
 
 	
 	
@@ -272,7 +282,7 @@ header .nav{
 		display: inline-block;
 	background: white;
 	color: #1E96F3;
-	padding: 2px 15px;
+	padding: 10px 15px;
 	font-size: 23px;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -297,7 +307,7 @@ header .nav{
   	flex-direction: column;
 		justify-content: center;
 		align-items: center;	
-		
+		font-family: var(--fontf);
 		}
 	
 	.max-width .title .enter{
@@ -328,7 +338,8 @@ header .nav{
 .content-3{
 	color: white;
 	font-size: 25px;
-	font-family: Poppins-a, 'Poppins';
+	font-family: var(--fontw);
+	font-weight: 650;
 
 }
 
@@ -368,8 +379,8 @@ header .nav{
 
 .box2 .content3{
 	font-size: 25px;
-	font-family: Poppins-a, 'Poppins';
-	font-weight: 550;
+	font-family: var(--fontw);
+	font-weight: 650;
 }
 
 .section-3 .content2{
@@ -429,10 +440,11 @@ header .nav{
 		padding-top: 30px;
     margin: 80px 20px 10px 20px;
     display: flex;
-    font-family: Poppins-a;
+    font-family: var(--fontw);
   	flex-direction: column;
 		justify-content: center;
 		align-items: center;	
+		text-align: center;
 	}
 	
 	span.be i{
@@ -444,7 +456,7 @@ header .nav{
 	span.be .mission-text{
 		font-size: 20px;
 		width: 50%;
-		font-family: Poppins;
+		
 	}
 
 .logo-section{
@@ -458,12 +470,13 @@ header .nav{
 
 .logo-section h1{
 	font-size: 25px;
-	font-family: Poppins-a;
+	font-family: var(--fontw);
+	font-weight: 700;
 	text-align: center;
 }
 
 .logo-section .Logo{
-	width: 500px;
+	width: 300px;
 	margin: 0;
   border: 3px solid #1E96F3; 	
 }
@@ -476,7 +489,7 @@ header .nav{
 	justify-content: center;
 	text-align: left;
 	width: 100%;
-	padding: 15px 0;
+	padding: 25px 0;
 	background: #F0F1EC;
 	color: black;
 }
@@ -493,7 +506,7 @@ header .nav{
 .section-4  .content-3{
   font-size: 31px;
   color: black;
-  font-family: Poppins-a, Poppins;
+  font-family: var(--fontw);
   	
 }
 
@@ -501,7 +514,7 @@ header .nav{
   display: inline-block;
 	background: #1E96F3;
 	color: white;
-	padding: 9px 15px;
+	padding: 10px 15px;
 	font-size: 20px;
 	margin-top: 20px;
 	border-radius: 4px;
@@ -531,7 +544,7 @@ header .nav{
 	
 	.section-5 .max-width .title{
 		color: white;
-		font-family: Poppins-a, 'Poppins';
+		font-family: var(--fontw);
 		
 	}
 
@@ -557,7 +570,7 @@ header .nav{
 .section-5 .contact-section .content-3{
 	font-size: 25px;
 	margin-bottom: 20px;
-	font-family: Poppins-a, 'Poppins';
+	font-family: var(--fontw);
 
 }
 
@@ -587,7 +600,8 @@ header .nav{
 
 .section-5 .contact-section .column-left .icons .row .info .head{
 	font-size: 22px;
-	font-family: Poppins-a, 'Poppins';
+	font-family: var(--fontw);
+	font-weight: 700;
 	}
 
 
@@ -692,7 +706,8 @@ footer{
 
 footer h1{
 	font-size: 30px;
-	font-family: Poppins-a;
+	font-family: var(--fontw);
+	font-weight: 700;
 	text-align: center;
 	color: white;
 	margin-top: 10px;
@@ -746,7 +761,7 @@ footer i{
 	}
 	
 .nav	.Logo{
-	width: 250px;
+	width: 150px;
   /*border: 2px solid black;*/	
 	}
 	
@@ -765,10 +780,11 @@ footer i{
      					display: inline-block;
      					color: white;
      					background: #1E96F3;
-     					padding: 5px 10px;
+     					padding: 10px;
      					border-radius:6px;
      					text-decoration: none;
      					font-family: Poppins-a, Helvetica;
+     					font-size: 18px;
      					font-weight: 600;
      				}
 
@@ -776,7 +792,7 @@ footer i{
 .section-1{
 	display: flex;
 	background-image: none;
-  height: 50vh;
+  height: 70vh;
 }
 
 .section-1 .max-width{
@@ -786,21 +802,21 @@ footer i{
 }
 
 .section-1 .max-width .content-1{
-	font-size: 30px;
+	font-size: 26px;
 }
 
 
 .section-1 .max-width .content-2{
-	font-size: 34px;	
+	font-size: 28px;	
 }
 
 .section-1 .max-width .content-3{
-	font-size: 30px;
+	font-size: 28px;
 	margin: 5px 0;
 }
 
 .active, .hi{
-	font-size: 20px;
+	font-size: 18px;
 }	
 	.section-2{
 		display: flex;
@@ -808,7 +824,7 @@ footer i{
 		
 	}
 	.section-2 .max-width .me{
-		width: 400px;
+		width: 300px;
 		margin-left: 0%;
     
 		}
@@ -821,7 +837,7 @@ footer i{
 		position: relative;
 		animation-name: text;
 		animation-duration: 10s;
-		animation-delay: 5s;
+		animation-delay: 3.5s;
 		}
 
 @keyframes text{
@@ -835,6 +851,7 @@ footer i{
 			top: 0;
 		}
 	}
+
 	.section-2 .column-right {
 		align-items: center;
 		justify-content: center;
@@ -939,7 +956,7 @@ footer i{
 }
 
 .logo-section .Logo{
-	width: 350px;
+	width: 200px;
 	margin: 0;
   border: 3px solid #1E96F3; 	
 }	
@@ -949,12 +966,9 @@ footer i{
 	
 		
 	.Logo{
-				width: 200px;
+				width: 135px;
 	}
 
-	.nav #menu-list{
-display: none;
-}
 
 
 
@@ -970,7 +984,7 @@ display: none;
 
 
 .section-1 .max-width .content-2{
-	font-size: 22px;
+	font-size: 24px;
 	color: #1E96F3;
 }
 
@@ -980,7 +994,7 @@ display: none;
 }
 
 .section-2 .max-width .me{
-		width: 250px;
+		width: 200px;
     margin-left: 0%;
     
 		}
@@ -988,11 +1002,11 @@ display: none;
 		
   .section-2 .column-right .max-width .text{
       	
-      	font-size: 20px;
+      	font-size: 18px;
       	
       }	
 
-.section 3 .be{
+.section-3 .be{
 	text-align: center;
 	font-size: 30px;
 }
@@ -1177,5 +1191,3 @@ footer{
 	text-align: center;
 }
 	}
-	
-	
